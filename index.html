@@ -48,11 +48,15 @@
 	</div>
     
 <!--banner图片结束-->   
-<script src="http://open.denglu.cc/connect/logincode?
-
-appid=67245denlPaYXW5KKMDFovk6Ooi0d6&v=1.0.2&widget=2&styletype=1&size=438_106" charset="utf-8" 
-
-type="text/javascript"></script>
+<script id='denglu_login_js' type='text/javascript' charset='utf-8'></script>
+<script type='text/javascript' charset='utf-8'>
+	(function() {
+		var _dl_time = new Date().getTime();
+		var _dl_login = document.getElementById('denglu_login_js');
+		_dl_login.id = _dl_login.id + '_' + _dl_time;
+		_dl_login.src = 'http://open.denglu.cc/connect/logincode?appid=67245denlPaYXW5KKMDFovk6Ooi0d6&v=1.0.2&widget=2&styletype=1&size=438_106&style=popup&asyn=true&time=' + _dl_time;
+	})();
+</script>
 
 <!--特点列表开始-->  
     
